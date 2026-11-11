@@ -69,3 +69,11 @@ h1{font-family:var(--f-display);font-weight:600;font-size:clamp(30px,5vw,52px);l
 .foot{font-size:13px;color:var(--muted);border-top:1px solid var(--line);padding-top:16px;max-width:80ch}
 @media (prefers-reduced-motion: reduce){*{transition:none!important;animation:none!important}}
 .dimmable{transition:opacity .25s}
+
+/* download button */
+.actions{display:flex;flex-wrap:wrap;align-items:center;gap:8px 14px;margin:4px 0 0}
+.dl{display:inline-flex;align-items:center;gap:8px;padding:11px 18px;border-radius:999px;background:var(--fg);color:var(--bg);font:600 15px/1 var(--f-body);text-decoration:none;transition:transform .15s,opacity .15s}
+.dl:hover{opacity:.88}
+.dl:active{transform:translateY(1px)}
+.dl:focus-visible{outline:2px solid #3E93E0;outline-offset:3px}
+.actions .hint{font-size:14px;color:var(--muted)}
